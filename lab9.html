@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab9_1.css">
+</head>
+<body>
+    <div class="page_wrapper">
+      <div class="tabs">
+        <button class="tab clicked" data-toggle-id="signup_form">Signn up</button>
+        <button class="tab" data-toggle-id="login_form">Log in</button>
+      </div>
+        <form class="form active" id="signup_form"action="/" novalidate>
+          <h2 class="header_info">
+            Create new account
+          </h2>
+          <div class="input_control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <div class="info"></div> 
+          </div>
+          <div class="input_control">
+            <label for="username">Email</label>
+            <input  class="email" name="email" id="email">
+            <div class="info"></div> 
+          </div>
+          <div class="input_control">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password">
+            <div class="info"></div> 
+          </div>
+          <div class="input_control">
+            <label for="password">Password again</label>
+            <input type="password" name="username" id="password2">
+            <div class="info"></div> 
+          </div>
+          <button type="submit" id="signup_button" class="submit_button">Signup</button>        
+        </form>
+        <form class="form " id="login_form"action="/" novalidate>
+          <h2 class="header_info">
+            Log in here
+          </h2>
+        <div class="input_control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="logusername">
+            <div class="info"></div> 
+          </div>
+          <div class="input_control">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="logpassword">
+            <div class="info"></div> 
+          </div>
+          <button type="submit" id="login_button" class="submit_button">Login</button>
+        </form>
+      <div class="loader_wrap">
+        <div class="loader_loading"></div>
+        <div class="loader_end">Завнтаження завершено</div>
+
+      </div>
+    
+    <script src="lab9_1.js"></script>
+</body>
+</html>
