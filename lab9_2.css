@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+.searchline_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.search{
+    width: 50%;
+    border-radius: 16px;
+    height: 25px;
+    padding-left: 4%;
+    border: 2px solid #4070F4;
+    font-size: 20px;
+    position: relative;
+}
+.search_icon{
+    position: absolute;
+    z-index: 2;
+    width: 26px;
+    height: 26px;
+    left: 23%;
+    
+}
+
+#searchline:focus,
+#searchline:active,
+#searchline:hover {
+    border: 2px solid #4070F4 !important; 
+}
+#searchline:active .search_icon{
+    display: none;
+}
+.page_content{
+    padding-top: 3%;
+    display: flex;
+    gap: 2%;
+    height: 90%;
+}
+.filtration_panel{
+    width: 15%;
+    background: #4070F4;
+    padding-bottom: 3%;   
+}
+.desc, .asc{
+    width: 50px;
+    height: 30px;
+    background-size: contain; /* Изображение масштабируется, чтобы полностью покрыть кнопку */
+    background-position: center; /* Центрируем изображение внутри кнопки */
+    background-repeat: no-repeat
+
+}
+.desc{
+    background-image: url(sortdesc.png);
+}
+.asc{
+    background-image: url(sortasc.png);
+}
+
+.sorting_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.sorting{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+.sorting label{
+    width: 50px;
+}
+.filtration_wrapper{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.filtration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+.fitration_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    height: 30px;
+    background-color: transparent;
+    gap: 14px;
+    font-weight: bold;
+    width: 97%;
+    padding-left: 4px;
+}
+.filtration_button{
+    width: 70%;
+    font-size: 19px;
+    height: 40px;
+}
+.fitration_input:active{
+    border: black;
+}
+.friend{  
+    margin-bottom: 2%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    box-shadow: 1px 1px 15px #aca6a6;
+
+
+}
+
+.friends{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    height: 90%;
+    width:83%;
+}
+.friend_img{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+.friend_name{
+    display: block;
+    width: 96%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #4070F4;
+    font-size: 25px;
+    padding: 5px;
+}
+.friend_name.male{
+    background-color: #4070F4;
+    
+}
+.friend_name.female{
+    background-color: #750cb6;
+    
+}
+
+
+.friend_info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.friend_sex{
+    border-top: 1px solid black;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    color: #4070F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_list{
+position: absolute;
+width: 52%;
+background-color: #4070F4;
+left: 24%;
+height: auto;
+display: flex;
+flex-direction: column;
+list-style-type: none;
+}
+.search_list li{
+    padding: 2%;
+    font-size: 20px;
+    border-bottom: 2px black solid;
+}
+
+
+

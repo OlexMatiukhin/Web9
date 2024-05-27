@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab9_2.css">
+</head>
+<body>
+    <div  class="searchline_wrapper">
+        <img src="magnifier.png" alt="" class="search_icon">
+        <input type="text" name="searchline" id="searchline" class="search">
+    </div>
+    <ul class="search_list" id="searchResults">
+    </ul>
+    <div class="page_content">
+        <form class="filtration_panel">
+            <div class="sorting_wrapper">
+                <div class="sorting">
+                    <label for="">Age</label>
+                    <button type="button" class="desc age"  id="age_desc">
+                    </button>
+                    <button type="button" class="asc age"  id="age_asc">                        
+                    </button>
+                </div>
+                <div class="sorting">
+                    <label for="">Name</label>
+                    <button type="button" class="desc name"   id="name_desc">
+                    </button>
+                    <button type="button" class="asc name"  id="name_asc">                        
+                    </button>
+                </div>
+                <div class="sorting">
+                    <label for="">Date</label>
+                    <button type="button" class="desc regist" id="regist_desc">
+                    <button type="button" class="asc regist" id="regist_asc">                        
+                    </button>
+                </div>
+            </div>
+            <div class="filtration_wrapper">
+                <div class="filtration">
+                    <input type="text"  class="fitration_input"  name="" id="name_value"> 
+                    <button type="button" class="filtration_button" id="filter_name">Filter by name</button>               
+                </div>
+                <div class="filtration">
+                    <input type="number"   class="fitration_input"  name="" id="age_value">   
+                    <button type="button" class="filtration_button" id="filter_age">Filter by age</button>                     
+                </div>  
+                <div class="filtration">
+                    <input type="text"  class="fitration_input" id="country_value"> 
+                    <button type="button" class="filtration_button" id="filter_county">Filter by country</button>                  
+                </div>  
+                <div class="filtration">
+                    <input type="email" class="fitration_input" id="email_value">  
+                    <button type="button"     class="filtration_button" id="filter_email">Filter by email</button>               
+                </div>
+                <div class="filtration">
+                    <button type="button"  class="filtration_button"  id="clear_all">Clear</button>               
+                </div>
+             
+               
+            </div>
+        </form>
+        <div class="friends">              
+        </div>
+        <script src="lab9_2.js"></script>
+        
+    </body>
+</html>
