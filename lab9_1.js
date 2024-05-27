@@ -31,12 +31,12 @@ const isValidEmail = email => {
 
 
 
-/*if(localStorage.length>0){
-   // window.location.assign('https://www.google.com/'); 
+if(localStorage.length>0){   
+ window.location.assign('lab9_2.html'); 
 }
 else{
     registration();
-}*/
+}
 registration();
 function registration(){
 let tabs = Array.from(document.getElementsByClassName('tab'));
